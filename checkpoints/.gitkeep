@@ -1,0 +1,4 @@
+# This file ensures the checkpoints directory is created
+# This directory will store scan progress checkpoints
+# This directory stores scan progress checkpoints
+# The scanner will save checkpoint files here to allow resuming interrupted scans

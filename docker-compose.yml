@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  mc-ip-scanner:
+    build: .
+    container_name: mc-ip-scanner
+    restart: unless-stopped
+    init: true  # Ensures proper signal handling
+    stop_grace_period: 30s  # Give 30 seconds for graceful shutdown
+    environment:
+      - DISCORD_TOKEN=${DISCORD_TOKEN}
+      - DISCORD_CHANNEL_ID=${DISCORD_CHANNEL_ID}
+    volumes:
+      - ./checkpoints:/app/checkpoints
+      - ./logs:/app/logs
+      - ./.env:/app/.env:ro
+    networks:
+      - scanner-network
+    # Example command - customize as needed
+    command: ["--random", "--realtime", "--workers", "20"]
+
+  # Optional: Add a web interface or monitoring service
+  # nginx:
+  #   image: nginx:alpine
+  #   container_name: mc-scanner-web
+  #   ports:
+  #     - "80:80"
+  #   volumes:
+  #     - ./web:/usr/share/nginx/html:ro
+  #   depends_on:
+  #     - mc-ip-scanner
+  #   networks:
+  #     - scanner-network
+
+networks:
+  scanner-network:
+    driver: bridge
+
+volumes:
+  checkpoints:
+  logs:

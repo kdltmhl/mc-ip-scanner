@@ -1,0 +1,10 @@
+# Sample Minecraft server IPs for testing
+
+# Fast responding servers (check these first)
+opsucht.net
+gommehd.net
+
+# Your custom servers (may be slow to respond)
+mc.rubincraft.org
+rubincraft.dat.gg
+openmc.net

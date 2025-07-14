@@ -1,0 +1,84 @@
+.env
+.env
+*.env
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.venv
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Docker
+.docker/
+.env.docker
+
+# Logs
+logs/
+*.log
+
+# Checkpoints and scan results
+checkpoints/*
+!checkpoints/.gitkeep
+scan_results/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Project specific
+test_ips.txt
+sample_ips.txt
+ips.txt
+
+# Compiled files
+__pycache__/
+src/__pycache__/
+*.pyc
+
+# System files
+*.bak
+*.tmp
+*.temp

@@ -1,0 +1,4 @@
+mcstatus>=12.0.0,<13.0.0  # For checking Minecraft server status
+discord.py>=2.3.0,<3.0.0  # For Discord integration
+python-dotenv>=1.0.0,<2.0.0  # For managing environment variables
+requests>=2.31.0,<3.0.0  # For HTTP requests
