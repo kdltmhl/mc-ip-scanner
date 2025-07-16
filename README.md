@@ -1,6 +1,6 @@
 # Minecraft Server Scanner
 
-A multithreaded Python application that pings an ip address checking for a running minecraft server and returns all the data about the server if one is found. The application can be run in a docker container for easy deployment and with an .env file it can return the findings using a discord bot.
+A multithreaded Python application that pings an ip address checking for a running minecraft server and returns all the data about the server if one is found. The application can be run in a docker container (WIP) and with an .env file it can return the findings using a discord bot.
 
 ## Legal Disclaimer
 
